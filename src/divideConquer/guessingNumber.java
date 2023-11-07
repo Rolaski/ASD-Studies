@@ -26,12 +26,11 @@ public class guessingNumber
         }
         else if(guess < number)
         {
-            System.out.println(" the number is bigger! "+(guess+1)+" - "+b);
+            System.out.println("the number is bigger! "+(guess+1)+" - "+b);
             recursion(guess+1, b, number);
         }
-        else if(guess > number)
-        {
-            System.out.println(" the number is smaller! "+a+" - "+(guess-1));
+        else {
+            System.out.println("the number is smaller! "+a+" - "+(guess-1));
             recursion(a,guess-1, number);
         }
     }
