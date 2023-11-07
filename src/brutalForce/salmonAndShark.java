@@ -28,22 +28,22 @@ public class salmonAndShark
 
             if(population <= salmonStartingPopulation/2 && population > salmonStartingPopulation/3 && !isExecuted[0])
             {
-                System.out.println("Populacja łososi spadła poniżej 1/2 miliona "+minutesPassed);
+                System.out.println("The salmon population has dropped below 1/2 million after "+minutesPassed+" minutes");
                 isExecuted[0] = true;
             }
             else if(population <= salmonStartingPopulation/3 && population > salmonStartingPopulation/10 && !isExecuted[1])
             {
-                System.out.println("Populacja łososi spadła poniżej 1/3 miliona "+minutesPassed);
+                System.out.println("The salmon population has dropped below 1/3 million after "+minutesPassed+" minutes");
                 isExecuted[1] = true;
             }
             else if(population <= salmonStartingPopulation/10 && population > salmonStartingPopulation/100 && !isExecuted[2])
             {
-                System.out.println("Populacja łososi spadła poniżej 1/10 miliona "+minutesPassed);
+                System.out.println("The salmon population has dropped below 1/10 million after "+minutesPassed+" minutes");
                 isExecuted[2] = true;
             }
             else if(population <= salmonStartingPopulation/100 && population > 100 && !isExecuted[3])
             {
-                System.out.println("Populacja łososi spadła poniżej 1/100 miliona "+minutesPassed);
+                System.out.println("The salmon population has dropped below 1/100 million after "+minutesPassed+" minutes");
                 isExecuted[3] = true;
             }
             else if(population <= 100)
