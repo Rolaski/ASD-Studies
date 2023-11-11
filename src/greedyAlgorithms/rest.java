@@ -9,7 +9,7 @@ public class rest
         BufferedReader wejscie = new BufferedReader(str);
         String tekst;
         final int[] M = {500,200,100,50,20,10,5,2,1};
-        final int[] L = {1,0,0,0,0,0,0,0,0};
+        final int[] L = {50,30,20,20,20,20,20,20,20};
         int[] monetki = new int[9];
         int zl, gr, r, i = 0;
         System.out.println("Podaj reszte..");
@@ -48,7 +48,10 @@ public class rest
         System.out.println("ilosc 0.05: "+monetki[6]);
         System.out.println("ilosc 0.02: "+monetki[7]);
         System.out.println("ilosc 0.01: "+monetki[8]);
-        System.out.println("NIE MOŻNA WYDAĆ CAŁEJ RESZTY, BRAKUJĄCA: "+r/100+"ZŁ");
+        if(r>0)
+        {
+            System.out.println("NIE MOŻNA WYDAĆ CAŁEJ RESZTY, BRAKUJĄCA: "+r/100+"ZŁ");
+        }
     }
 }
 
