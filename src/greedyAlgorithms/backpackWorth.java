@@ -27,14 +27,13 @@ public class backpackWorth
     }
     static void backpack1()
     {
-        int Vbp = 10;
         for(int i = 0; i < worth.length; i++)
         {
-            System.out.println("id: "+max()[0]+ ", worth: "+max()[1]+ ", volume: "+volume[max()[0]]);
-            if(Vbp - volume[max()[0]] >= 0)
+//            System.out.println("id: "+max()[0]+ ", worth: "+max()[1]+ ", volume: "+volume[max()[0]]);
+            if(bpV - volume[max()[0]] >= 0)
             {
-                Vbp = Vbp - volume[max()[0]];
-                System.out.println("id: "+max()[0]+", free space: "+Vbp);
+                bpV = bpV- volume[max()[0]];
+                System.out.println("id: "+max()[0]+", free space: "+bpV);
             }
             worth[max()[0]] =- max()[1];
         }
