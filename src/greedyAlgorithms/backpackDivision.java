@@ -23,7 +23,8 @@ public class backpackDivision
     }
 
     //obliczanie objetosci przez wartosc ksiazek
-    public static void calculateRatios() {
+    public static void calculateRatios()
+    {
         for (int i = 0; i < volume.length; i++)
             result[1][i] = (double) volume[i] / worth[i];
     }
