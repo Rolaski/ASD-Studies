@@ -7,7 +7,7 @@ public class restMC
 {
     static final int[] coins = {500, 200, 100,50,20,10,5,2,1};
     static final int coinLimit = 11;
-    static final int draws = 10;
+    static final int draws = 10000;
     static int minCoins = draws;
 
     public static void main(String[] args)
@@ -16,8 +16,6 @@ public class restMC
         //losowanie monety
         Random random = new Random();
 
-        //tablica wydanych monet dla danego rozwiazania
-        int[] actualCoinsIssued = new int[coinLimit];
         //tablica wydanych monet dla NAJLEPSZEGO rozwiazania
         int[] bestCoinsIssued = new int[coinLimit];
         int actualCoin, zl, gr, r;
@@ -29,6 +27,9 @@ public class restMC
 
         for(int i=0; i<draws; i++)
         {
+            //tablica wydanych monet dla danego rozwiazania
+            int[] actualCoinsIssued = new int[coinLimit];
+
             int coinsIssued = 0;
             r = zl*100+gr;
             while(r>0 && coinsIssued < coinLimit)
