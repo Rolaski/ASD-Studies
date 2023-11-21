@@ -36,7 +36,7 @@ public class guessingNumberDynamic
 
             if(guess==number)
             {
-                System.out.println("I guessed it bitch! "+number);
+                System.out.println("I guessed it! - "+number);
                 System.exit(404);
             }
             else if(guess < number)
