@@ -7,7 +7,7 @@ public class bacteria
 
     public static void main(String[] args)
     {
-        bacteria_counter(1);
+        bacteria_counter(6);
     }
 
     public static int bacteria_counter(int n)
