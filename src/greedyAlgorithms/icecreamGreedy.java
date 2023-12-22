@@ -7,12 +7,12 @@ public class icecreamGreedy
     private static boolean[] odwiedzone = new boolean[N];
 
     static int[][] czasy = {
-            {0, 7, 20, 21, 12, 23},
-            {27, 0, 13, 16, 46, 5},
-            {53, 15, 0, 25, 27, 6},
-            {16, 2, 35, 0, 47, 10},
-            {31, 29, 5, 18, 0, 4},
-            {28, 24, 1, 17, 5, 0}
+            {0, 7, 20, 0, 12, 23},
+            {27, 0, 13, 16, 0, 5},
+            {53, 0, 0, 25, 27, 6},
+            {16, 2, 35, 0, 47, 0},
+            {31, 29, 0, 18, 0, 4},
+            {0, 24, 1, 17, 5, 0}
     };
 
     static int minCzas = Integer.MAX_VALUE;
