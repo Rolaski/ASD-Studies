@@ -2,6 +2,8 @@ package structures.Set;
 
 import java.util.HashSet;
 import java.util.Iterator;
+
+//ZBIÓR
 public class HashSetSet {
     private HashSet<Integer> hashSet;
 
